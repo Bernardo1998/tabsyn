@@ -1,0 +1,10 @@
+*__pycache__*
+csv/*
+synth_data/*
+data/*
+synthetic/*
+process_log.txt
+*/ckpt/*
+*.pt
+*.npy
+*.json

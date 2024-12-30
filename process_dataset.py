@@ -133,9 +133,10 @@ def train_val_test_split(data_df, cat_columns, num_train = 0, num_test = 0):
 
         flag = 0
         for i in cat_columns:
-            if len(set(train_df[i])) != len(set(data_df[i])):
-                flag = 1
-                break
+            pass # This check is not needed for now, as we are including distribution shift datasets.
+            #if len(set(train_df[i])) != len(set(data_df[i])):
+            #    flag = 1
+            #    break
 
         if flag == 0:
             break
